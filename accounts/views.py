@@ -11,8 +11,8 @@ def addexperience(request):
 def createprofile(request):
     return render(request,'accounts/create-profile.html',{})
 
-def dashbord(request):
-    return render(request,'accounts/dashbord.html',{})
+def dashboard(request):
+    return render(request,'accounts/dashboard.html',{})
 
 def login(request):
     return render(request,'accounts/login.html',{})
