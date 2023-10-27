@@ -52,16 +52,16 @@
             <div>
               <h1> {{post.title}} </h1>
               <p class="my-1">
-               {{post.body.timesince}}
+                {{post.body.timesince}}
               </p>
-              <small> {{post.created}} </small>
+              <small> {{post.created_at}} </small>
               <button class="btn">
                 <i class="fas fa-thumbs-up"></i> <span>{{post.like.count}}</span>
               </button>
               <button class="btn">
                 <i class="fas fa-thumbs-down"></i> <span>{{post.dislike.count}}</span>
               </button>
-              <a href="post.get_absolute_url" class="btn btn-primary">
+              <a href="{{post.get_absolute_url}}" class="btn btn-primary">
                 Discussion
               </a>
             </div>
